@@ -21,3 +21,16 @@
     bottom: 0px;
     color: white;
 }
+#background_image h1{
+    position: absolute;
+    color: azure;
+    background-color: rgba(94, 92, 92, 0.5);
+    padding: 0.2em 0.6em;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+#background_image p a{
+    color: white;
+} 
