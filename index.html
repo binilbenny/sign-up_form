@@ -10,12 +10,45 @@
 </head>
 <body>
     <div id="container">
-        <div id="background_image" class="image">
+        <div id="sidebar" class="image">
             <img src="img/alain-BMxyU_Hkvs4-unsplash.jpg" alt="Nature boat on a lake">
             <h1><b><img src="img/odin-lined.png" alt="logo" width="30px"> HELLO WORLD</b></h1>
             <p>Photo by Alain on <a href="https://unsplash.com/photos/BMxyU_Hkvs4">Unsplash.com</a></p>
         </div>
-        <div id="main_page"></div>
+        <div id="main_page">
+            <p class="intro">This is not a real online service! To get to new knowledge and find a new way to 
+                learn around you sign up with us and it's totally free...
+            </p>
+            
+            <div id="sign-up_form">
+                <h3>Let's do this!</h3>
+                <form action="">
+                    <div class="input">
+                    <label for="fname">FIRST name</label>
+                    <input type="text" placeholder="Odin" required>
+
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" placeholder="Borson" required>
+
+                    <label for="email">EMAIL</label>
+                    <input type="email" placeholder="example@ex.com" required>
+
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" placeholder="123-456-7890" title="ex: 000-000-0000" required>
+
+                    <label for="pswod">PASSWORD</label>
+                    <input type="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[$@!*])(?=.*[0-9])[a-zA-Z0-9$@*!]{6,15}" required>
+
+                    <label for="pswod">CONFIRM PASSWORD</label>
+                    <input type="password">
+                    </div>
+
+                    <div class="submit">
+                    <input type="submit" value="Create Account">
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <script src="app.js"></script>
