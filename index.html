@@ -11,44 +11,62 @@
 <body>
     <div id="container">
         <div id="sidebar" class="image">
-            <img src="img/alain-BMxyU_Hkvs4-unsplash.jpg" alt="Nature boat on a lake">
-            <h1><b><img src="img/odin-lined.png" alt="logo" width="30px"> HELLO WORLD</b></h1>
+            <img class="bg" src="img/alain-BMxyU_Hkvs4-unsplash.jpg" alt="Nature boat on a lake">
+            <h1><b><img class="logo" src="img/odin-lined.png" alt="logo" width="30px"> HELLO WORLD</b></h1>
             <p>Photo by Alain on <a href="https://unsplash.com/photos/BMxyU_Hkvs4">Unsplash.com</a></p>
         </div>
         <div id="main_page">
-            <p class="intro">This is not a real online service! To get to new knowledge and find a new way to 
+            <p class="intro"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis alias aut veritatis animi. Enim adipisci soluta ipsum optio omnis natus, est quos cum?<br><br>
+                This is not a real online service! To get to new knowledge and find a new way to 
                 learn around you sign up with us and it's totally free...
             </p>
             
             <div id="sign-up_form">
                 <h3>Let's do this!</h3>
-                <form action="">
-                    <div class="input">
-                    <label for="fname">FIRST name</label>
-                    <input type="text" placeholder="Odin" required>
+                <form action="" class="sign-up-form">
+                    
+                        <div class="user-detail">
+                            <div class="input">
+                                <p><label for="fname">FIRST NAME</label></p>
+                                <input type="text" placeholder="Odin" required>
+                            </div>
+                            <div class="input">
+                                <p><label for="lname">LAST NAME</label></p>
+                                <input type="text" placeholder="Borson" required>
+                            </div>
+                            <div class="input">
+                                <p><label for="email">EMAIL</label></p>
+                                <input type="email" placeholder="example@ex.com" required>
 
-                    <label for="lname">LAST NAME</label>
-                    <input type="text" placeholder="Borson" required>
+                            </div>
+                            <div class="input">
+                                <p><label for="phone">PHONE NUMBER</label></p>
+                                <input type="tel" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" placeholder="123-456-7890" title="ex: 000-000-0000" required>
 
-                    <label for="email">EMAIL</label>
-                    <input type="email" placeholder="example@ex.com" required>
-
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" placeholder="123-456-7890" title="ex: 000-000-0000" required>
-
-                    <label for="pswod">PASSWORD</label>
-                    <input type="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[$@!*])(?=.*[0-9])[a-zA-Z0-9$@*!]{6,15}" required>
-
-                    <label for="pswod">CONFIRM PASSWORD</label>
-                    <input type="password" required>
-                    </div>
+                            </div>
+                            <div class="input">
+                                <p><label for="pswod">PASSWORD</label></p>
+                                <input type="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[$@!*])(?=.*[0-9])[a-zA-Z0-9$@*!]{6,15}" required>
+                                <p class="error-message">Enter 6-15 character consist of atleast <br>one upper,lower case, number, symbol ($!@*)</p>
+                            </div>
+                            <div class="input">
+                                <p><label for="pswod">CONFIRM PASSWORD</label></p>
+                                <input type="password" required>
+                                
+                            </div>
+                        </div>
+                    
 
                     <div class="submit">
                         <button type="submit">Create new account</button>
                     </div>
                 </form>
+
+                <div class="log-in">
+                    <p><b>Already have an account? <a href="#">Log in</a></b></p>
+                </div>
             </div>
-        </div>
+        </div> 
     </div>
 
     <script src="app.js"></script>
